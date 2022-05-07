@@ -15,6 +15,8 @@
 
 }
 
+/* Menu */
+
 .menu {
     background: var(--preto);
     height: 80px;
@@ -53,11 +55,11 @@
     list-style: none;
 }
 
-.navbar_item {
+.itens_menu {
     height: 80px;
 }
 
-.navbar_links {
+.itens_menu {
     color: #fff;
     display: flex;
     align-items: center;
@@ -94,7 +96,7 @@
     transition: all 0.3s ease;
 }
 
-.navbar_links:hover {
+.links:hover {
     color: var(--vinho);
     transition: all 0.3s ease;
 }
@@ -144,11 +146,11 @@
         background: #fff;
     }
 
-    .navbar_item {
+    .itens_menu {
         width: 100%;
     }
 
-    .navbar_links {
+    .itens_menu {
         text-align: center;
         padding: 2rem;
         width: 100%;
@@ -192,3 +194,5 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+/* Fim Do Menu */
