@@ -59,8 +59,8 @@
     height: 80px;
 }
 
-.itens_menu {
-    color: #fff;
+.links {
+    color: var(--branco);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +70,7 @@
     transition: all 0.3s ease;
 }
 
-.navbar_btn {
+.botao_menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,7 +78,7 @@
     width: 100%;
 }
 
-.button {
+.botao {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,11 +89,14 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    color: #fff;
+    background: var(--vinho);
+    color: var(--branco);
     transition: all 0.3s ease;
+    opacity: 0.9;
+}
+
+.botao:hover {
+    opacity: 1;
 }
 
 .links:hover {
@@ -125,7 +128,7 @@
     }
 
     .links_menu.active {
-        background: #131313;
+        background: var(--preto);
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -138,30 +141,30 @@
         padding-left: 25px;
     }
 
-    .menu_mobile .bar {
+    .menu_mobile .barrinha {
         width: 25px;
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
-        background: #fff;
+        background: var(--branco);
     }
 
     .itens_menu {
         width: 100%;
     }
 
-    .itens_menu {
+    .links {
         text-align: center;
         padding: 2rem;
         width: 100%;
         display: table;
     }
 
-    .navbar_btn {
+    .botao_menu {
         padding-bottom: 2rem;
     }
 
-    .button {
+    .botao {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -170,7 +173,7 @@
         margin: 0;
     }
 
-    #menu-mobile {
+    #mobile-menu {
         position: absolute;
         top: 20%;
         right: 5%;
@@ -182,15 +185,15 @@
         cursor: pointer;
     }
 
-    #menu-mobile.is-active .barrinha:nth-child(2) {
+    #mobile-menu.is-active .barrinha:nth-child(2) {
         opacity: 0;
     }
 
-    #menu-mobile.is-active .barrinha:nth-child(1) {
+    #mobile-menu.is-active .barrinha:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
 
-    #menu-mobile.is-active .barrinha:nth-child(3) {
+    #mobile-menu.is-active .barrinha:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
