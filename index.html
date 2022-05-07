@@ -11,22 +11,30 @@
 
 <body>
     <!-- Menu -->
-    <div class="fundo">
-        <div class="menu">
-            <div class="logo">
-                <img src="./images/logo.png" width="100px">
+    <nav class="menu">
+        <div class="menu_container">
+            <a href="#home" id="navbar_logo">Sazietá Pizzaria</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Cardápio</a></li>
-                    <li><a href="">Sobre Nós</a></li>
-                    <li><a href="">Equipe</a></li>
-                    <li><a href="">Contato</a></li>
-                </ul>
-            </nav>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="#home" class="navbar_links" id="home-page">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#about" class="navbar_links" id="about-page">Cardápio</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#services" class="navbar_links" id="services-page">Equipe</a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="#sign-up" class="button" id="signup">Reservar</a>
+                </li>
+            </ul>
         </div>
-    </div>
+    </nav>
 </body>
 
 </html>
