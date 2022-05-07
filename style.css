@@ -35,7 +35,7 @@
     padding: 0 50px;
 }
 
-#navbar_logo {
+#logo {
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     background-size: 100%;
@@ -135,7 +135,7 @@
         font-size: 1.6rem;
     }
 
-    #navbar_logo {
+    #logo {
         padding-left: 25px;
     }
 
