@@ -12,6 +12,40 @@ const mobileMenu = () => {
 
 menu.addEventListener('click', mobileMenu);
 
+
+// Mostra no menu onde o usuário está na tela
+const marcadorMenu = () => {
+    const el = document.querySelector('.marcador');
+    const home = document.querySelector('#home-link');
+    const cardapio = document.querySelector('#cardapio-link');
+    const equipe = document.querySelector('#equipe-link');
+    let scrollPosition = window.scrollY;
+
+    if (window.innerWidth > 960 && scrollPosition < 600) {
+        home.classList.add('marcador');
+        cardapio.classList.remove('marcador');
+        equipe.classList.remove('marcador');
+        return;
+    } else if (window.innerWidth > 960 && scrollPosition < 1400) {
+        cardapio.classList.add('marcador');
+        home.classList.remove('marcador');
+        equipe.classList.remove('marcador');
+        return;
+    } else if (window.innerWidth > 960 && scrollPosition < 2345) {
+        equipe.classList.add('marcador');
+        cardapio.classList.remove('marcador');
+        home.classList.remove('marcador');
+        return;
+    };
+
+    if ((el && window.innerWidth < 960 && scrollPosition < 600) || el) {
+        el.classList.remove('marcador');
+    }
+};
+
+window.addEventListener('scroll', marcadorMenu);
+window.addEventListener('click', marcadorMenu);
+
 // Swiper
 var swiper = new Swiper(".home_slider", {
     spaceBetween: 30,

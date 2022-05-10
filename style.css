@@ -15,6 +15,10 @@
 
 }
 
+.marcador {
+    border-bottom: 3px solid var(--vinho);
+}
+
 /* Menu */
 
 .menu {
@@ -340,3 +344,5 @@ section:nth-child(even) {
 }
 
 /* Fim da Home */
+
+/* Cardápio */
