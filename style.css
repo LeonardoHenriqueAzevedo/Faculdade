@@ -471,3 +471,47 @@ section.cardapio {
     margin: 1rem 0;
     width: 49%;
 }
+
+.botao_reservar {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: var(--branco);
+    background: var(--vinho);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.botao_reservar:hover {
+    opacity: 1;
+    letter-spacing: .1px;
+}
+
+@media (max-width:740px) {
+
+    .reservar form .inputs input,
+    .reservar form .inputs select,
+    .reservar form .inputs textarea,
+    .reservar form .inputs #mapa {
+        width: 100%;
+    }
+
+    .botao_reservar {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media (max-width:400px) {
+    .reservar form {
+        width: 95%;
+    }
+
+    .botao_reservar {
+        font-size: 1.2rem;
+    }
+
+}
