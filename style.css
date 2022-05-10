@@ -127,7 +127,7 @@
         z-index: -1;
     }
 
-    .links_menu.active {
+    .links_menu.ativar {
         background: var(--preto);
         top: 100%;
         opacity: 1;
@@ -185,15 +185,15 @@
         cursor: pointer;
     }
 
-    #mobile-menu.is-active .barrinha:nth-child(2) {
+    #mobile-menu.esta-ativo .barrinha:nth-child(2) {
         opacity: 0;
     }
 
-    #mobile-menu.is-active .barrinha:nth-child(1) {
+    #mobile-menu.esta-ativo .barrinha:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
 
-    #mobile-menu.is-active .barrinha:nth-child(3) {
+    #mobile-menu.esta-ativo .barrinha:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
@@ -201,5 +201,6 @@
 /* Fim Do Menu */
 
 /* Home */
+
 
 /* Fim da Home */
