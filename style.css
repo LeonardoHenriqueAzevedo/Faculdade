@@ -346,6 +346,10 @@ section:nth-child(even) {
 /* Fim da Home */
 
 /* Cardápio */
+section.cardapio {
+    background: var(--preto);
+}
+
 .titulo_cardapio {
     text-align: center;
     width: 90%;
