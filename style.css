@@ -205,12 +205,34 @@ section {
     padding: 2rem 9%;
 }
 
+section:nth-child(even) {
+    background: var(--branco);
+}
+
+
 .home .home_slider .slider {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10rem;
+    gap: 2rem;
     padding-top: 9rem;
+}
+
+.slider .conteudo {
+    flex: 1 1 45rem;
+}
+
+.slider .imagem_home {
+    flex: 1 1 45rem;
+}
+
+.slider .imagem_home img {
+    width: 100%;
+}
+
+.conteudo span {
+    color: var(--vinho);
+    font-size: 2.5rem;
 }
 
 /* Fim da Home */
