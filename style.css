@@ -346,3 +346,19 @@ section:nth-child(even) {
 /* Fim da Home */
 
 /* Cardápio */
+.titulo_cardapio {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 .5rem;
+    padding-top: 6rem;
+    box-shadow: 0 .2rem .05rem rgba(0, 0, 0, 0.3);
+}
+
+.titulo_cardapio span {
+    display: inline-block;
+    font-size: 3.5rem;
+    color: var(--vinho);
+    padding: 1rem 0;
+    box-shadow: 0 .2rem .05rem var(--vinho);
+}
