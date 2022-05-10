@@ -12,8 +12,8 @@ menu.addEventListener('click', mobileMenu);
 
 // Fecha o Menu quando for clicado
 const fechaMenu = () => {
-    const menuBars = document.querySelector('.esta-ativo');
-    if (window.innerWidth <= 768 && menuBars) {
+    const barrinhaMenu = document.querySelector('.esta-ativo');
+    if (window.innerWidth <= 960 && barrinhaMenu) {
         menu.classList.toggle('esta-ativo');
         linksMenu.classList.remove('ativar');
     };
@@ -43,27 +43,26 @@ const marcadorMenu = () => {
     const el = document.querySelector('.marcador');
     const home = document.querySelector('#home-link');
     const cardapio = document.querySelector('#cardapio-link');
-    const equipe = document.querySelector('#equipe-link');
-    let scrollPosition = window.scrollY;
+    let posicaoScroll = window.scrollY;
 
-    if (window.innerWidth > 960 && scrollPosition < 600) {
+    if (window.innerWidth > 960 && posicaoScroll < 600) {
         home.classList.add('marcador');
         cardapio.classList.remove('marcador');
         equipe.classList.remove('marcador');
         return;
-    } else if (window.innerWidth > 960 && scrollPosition < 1400) {
+    } else if (window.innerWidth > 960 && posicaoScroll < 1400) {
         cardapio.classList.add('marcador');
         home.classList.remove('marcador');
         equipe.classList.remove('marcador');
         return;
-    } else if (window.innerWidth > 960 && scrollPosition < 2345) {
+    } else if (window.innerWidth > 960 && posicaoScroll < 2345) {
         equipe.classList.add('marcador');
         cardapio.classList.remove('marcador');
         home.classList.remove('marcador');
         return;
     };
 
-    if ((el && window.innerWidth < 960 && scrollPosition < 600) || el) {
+    if ((el && window.innerWidth < 960 && posicaoScroll < 600) || el) {
         el.classList.remove('marcador');
     }
 };
