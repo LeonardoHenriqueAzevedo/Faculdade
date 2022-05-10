@@ -205,4 +205,12 @@ section {
     padding: 2rem 9%;
 }
 
+.home .home_slider .slider {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 9rem;
+}
+
 /* Fim da Home */
