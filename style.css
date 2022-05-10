@@ -206,7 +206,7 @@ section {
 }
 
 section:nth-child(even) {
-    background: var(--branco);
+    background: #131313;
 }
 
 
@@ -233,6 +233,10 @@ section:nth-child(even) {
 .conteudo span {
     color: var(--vinho);
     font-size: 2.5rem;
+}
+
+.conteudo h3 {
+    color: var(--branco);
 }
 
 /* Fim da Home */
