@@ -245,6 +245,7 @@ section:nth-child(even) {
     color: #a7a5a5;
     padding: .5rem 0;
     line-height: 1.5;
+    font-size: 1.1rem;
 }
 
 .botao_home {
@@ -257,6 +258,12 @@ section:nth-child(even) {
     cursor: pointer;
     padding: .8rem 3rem;
     text-decoration: none;
+    opacity: 0.9;
+}
+
+.botao_home:hover {
+    opacity: 1;
+    letter-spacing: .1px;
 }
 
 /* Fim da Home */
