@@ -206,7 +206,7 @@ section {
 }
 
 section:nth-child(even) {
-    background: #171717;
+    background: #181818;
 }
 
 
@@ -319,26 +319,23 @@ section:nth-child(even) {
     }
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 735px) {
+    .slider .imagem_home img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 437px) {
     .conteudo span {
-        font-size: 1.8rem;
+        font-size: 2.1rem;
     }
 
     .conteudo h3 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .conteudo p {
         font-size: 0.7rem;
-    }
-
-    .botao_home {
-        font-size: 1.3rem;
-        padding: .7rem 2rem;
-    }
-
-    .slider .imagem_home img {
-        width: 100%;
     }
 }
 
