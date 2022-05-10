@@ -348,6 +348,7 @@ section:nth-child(even) {
 /* Cardápio */
 section.cardapio {
     background: var(--preto);
+    min-height: 100vh;
 }
 
 .titulo_cardapio {
@@ -355,8 +356,7 @@ section.cardapio {
     width: 90%;
     margin: 0 auto;
     padding: 0 .5rem;
-    padding-top: 6rem;
-    box-shadow: 0 .2rem .05rem rgba(0, 0, 0, 0.3);
+    padding-top: 4rem;
 }
 
 .titulo_cardapio span {
@@ -365,4 +365,27 @@ section.cardapio {
     color: var(--vinho);
     padding: 1rem 0;
     box-shadow: 0 .2rem .05rem var(--vinho);
+}
+
+.controles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    list-style: none;
+}
+
+.controles .botoes {
+    margin: 1rem 2rem;
+    padding: .5rem 0;
+    border-bottom: .2rem solid var(--branco);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.controles .botoes:hover {
+    color: var(--vinho);
+    border-color: var(--vinho);
 }
