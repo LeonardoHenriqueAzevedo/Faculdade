@@ -351,7 +351,7 @@ section.cardapio {
     min-height: 100vh;
 }
 
-.titulo_cardapio {
+.titulo {
     text-align: center;
     width: 90%;
     margin: 0 auto;
@@ -359,7 +359,7 @@ section.cardapio {
     padding-top: 4rem;
 }
 
-.titulo_cardapio span {
+.titulo span {
     display: inline-block;
     font-size: 3.5rem;
     color: var(--vinho);
@@ -400,7 +400,7 @@ section.cardapio {
 }
 
 .cardapio .imagem-cardapio .imagem {
-    width: 35rem;
+    width: 28rem;
     margin: 2rem;
     border: 3px solid var(--vinho);
 }
@@ -417,4 +417,57 @@ section.cardapio {
     padding: .5rem;
     text-decoration: none;
     cursor: default;
+}
+
+/* Fim do Cardápio */
+
+/* Reservar */
+.reservar {
+    min-height: 100vh;
+    padding-bottom: 2rem;
+}
+
+.reservar form {
+    border-radius: 1rem;
+    background: var(--branco);
+    width: 85%;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.reservar form .inputs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.reservar form .inputs input,
+.reservar form .inputs select,
+.reservar form .inputs textarea {
+    padding: 0 1rem;
+    font-size: 1.7rem;
+    color: var(--preto);
+    height: 4rem;
+    width: 49%;
+    margin: 1rem 0;
+    border: .1rem solid var(--preto);
+}
+
+.reservar form .inputs input:focus,
+.reservar form .inputs select:focus,
+.reservar form .inputs textarea:focus {
+    border: .2rem solid var(--red);
+}
+
+.reservar form .inputs textarea {
+    height: 20rem;
+    padding: 1rem;
+    resize: none;
+}
+
+.reservar form .inputs #mapa {
+    height: 20rem;
+    margin: 1rem 0;
+    width: 49%;
 }

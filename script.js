@@ -1,17 +1,35 @@
 const menu = document.querySelector('#mobile-menu');
 const linksMenu = document.querySelector('.links_menu');
 const logo = document.querySelector('#logo');
-
+const controles = document.querySelector('.controles');
+const botoes = document.querySelector('.botoes');
+const bt1 = document.querySelector('.bt1');
+const bt2 = document.querySelector('.bt2');
+const bt3 = document.querySelector('.bt3');
 
 // Menu Para celular
 const mobileMenu = () => {
-    console.log(linksMenu);
     menu.classList.toggle('esta-ativo');
     linksMenu.classList.toggle('ativar');
 };
 
 menu.addEventListener('click', mobileMenu);
 
+// Cardápio com JQuery
+$(document).ready(function () {
+
+    $('.controles .botoes').click(function () {
+        $(this).addClass('botao-ativo').siblings().removeClass('botao-ativo');
+
+        let filtro = $(this).attr('data-filter');
+        if (filtro == 'todos') {
+            $('.cardapio .imagem').show(400);
+        } else {
+            $('.cardapio .imagem').not('.' + filtro).hide(200);
+            $('.cardapio .imagem').filter('.' + filtro).show(200);
+        }
+    })
+});
 
 // Mostra no menu onde o usuário está na tela
 const marcadorMenu = () => {
@@ -45,8 +63,6 @@ const marcadorMenu = () => {
 
 window.addEventListener('scroll', marcadorMenu);
 window.addEventListener('click', marcadorMenu);
-
-// Cardápio
 
 
 // Swiper

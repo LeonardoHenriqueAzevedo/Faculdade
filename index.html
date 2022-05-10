@@ -28,9 +28,6 @@
                 <li class="itens_menu">
                     <a href="#cardapio" class="links" id="cardapio-link">Cardápio</a>
                 </li>
-                <li class="itens_menu">
-                    <a href="#equipe" class="links" id="equipe-link">Equipe</a>
-                </li>
                 <li class="botao_menu">
                     <a href="#reservar" class="botao" id="reservar-link">Reservar</a>
                 </li>
@@ -88,32 +85,97 @@
 
     <!-- Cardápio -->
     <section class="cardapio" id="cardapio">
-        <h1 class="titulo_cardapio"><span>Nossas Pizzas</span></h1>
+        <h1 class="titulo"><span>Nossas Pizzas</span></h1>
         <ul class="controles">
-            <li class="botoes botao-ativo" data-filter="salgada">Salgadas</li>
+            <li class="botoes botao-ativo" data-filter="todos">Todos</li>
+            <li class="botoes" data-filter="salgada">Salgadas</li>
             <li class="botoes" data-filter="doce">Doces</li>
             <li class="botoes" data-filter="vegetariana">Vegetariana</li>
         </ul>
 
         <div class="imagem-cardapio">
-            <div class="imagem salgada">
+            <div class="imagem salgada todos">
                 <img src="./images/salgada_frango.png" alt="">
                 <a href="#">Frango com Catupiry</a>
             </div>
 
-            <div class="imagem doce">
+            <div class="imagem salgada todos">
+                <img src="./images/salgada_calabresa.jpg" alt="">
+                <a href="#">Calabresa</a>
+            </div>
+
+            <div class="imagem salgada todos">
+                <img src="./images/salgada_4_queijos.png" alt="">
+                <a href="#">Quatro Queijos</a>
+            </div>
+
+            <div class="imagem doce todos">
                 <img src="./images/doce_choc_e_m.jpg" alt="">
                 <a href="#">Chocolate com Morango</a>
             </div>
 
-            <div class="imagem vegetariana">
+            <div class="imagem doce todos">
+                <img src="./images/doce_romeu_julieta.jpg" alt="">
+                <a href="#">Romeu e Julieta</a>
+            </div>
+
+            <div class="imagem doce todos">
+                <img src="./images/doce_brig.jpg" alt="">
+                <a href="#">Brigadeiro</a>
+            </div>
+
+            <div class="imagem vegetariana todos">
                 <img src="./images/vegetariana_1.jpg" alt="">
                 <a href="#">Vegetariana 1</a>
+            </div>
+
+            <div class="imagem vegetariana todos">
+                <img src="./images/vegetariana_2.jpg" alt="">
+                <a href="#">Vegetariana 2</a>
+            </div>
+
+            <div class="imagem vegetariana todos">
+                <img src="./images/vegetariana_3.jpg" alt="">
+                <a href="#">Vegetariana 3</a>
             </div>
         </div>
     </section>
     <!-- Fim do Cardápio -->
 
+    <!-- Reservar -->
+    <section class="reservar" id="reservar">
+        <h1 class="titulo"><span>Reservar</span></h1>
+
+        <form action="">
+            <div class="inputs">
+                <input type="text" placeholder="Nome Completo">
+                <input type="date">
+            </div>
+            <div class="inputs">
+                <input type="number" placeholder="Telefone">
+                <select>
+                    <option>Mesa p/ quantos</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 ou mais</option>
+                </select>
+            </div>
+
+            <div class="inputs">
+                <textarea cols="30" rows="10" placeholder="Informações Adicionais"></textarea>
+                <iframe id="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1973529954835!2d-46.6564943!3d-23.5613545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1652166272235!5m2!1spt-BR!2sbr"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+            <input type="submit" value="Reservar Agora" class="botao_home">
+        </form>
+    </section>
+    <!-- Fim do Reservar -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
