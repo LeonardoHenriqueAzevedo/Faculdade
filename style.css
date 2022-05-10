@@ -228,7 +228,6 @@ section:nth-child(even) {
 
 .slider .imagem_home img {
     width: 100%;
-    z-index: -2;
 }
 
 .conteudo span {
@@ -268,6 +267,79 @@ section:nth-child(even) {
 
 .swiper-pagination-bullet-active {
     background: var(--vinho) !important;
+}
+
+@media screen and (max-width: 1800px) {
+    .slider .conteudo {
+        flex: 1 1 20rem;
+    }
+
+    .slider .imagem_home {
+        flex: 1 1 20rem;
+    }
+}
+
+@media screen and (max-width: 1457px) {
+    .conteudo span {
+        font-size: 2.7rem;
+    }
+
+    .conteudo h3 {
+        font-size: 4.5rem;
+    }
+
+    .conteudo p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .conteudo h3 {
+        font-size: 3.7rem;
+    }
+
+    .conteudo p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 913px) {
+    .conteudo span {
+        font-size: 2.2rem;
+    }
+
+    .conteudo h3 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 819px) {
+    section {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .conteudo span {
+        font-size: 1.8rem;
+    }
+
+    .conteudo h3 {
+        font-size: 2rem;
+    }
+
+    .conteudo p {
+        font-size: 0.7rem;
+    }
+
+    .botao_home {
+        font-size: 1.3rem;
+        padding: .7rem 2rem;
+    }
+
+    .slider .imagem_home img {
+        width: 100%;
+    }
 }
 
 /* Fim da Home */
