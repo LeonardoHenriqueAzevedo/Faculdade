@@ -1,11 +1,6 @@
 const menu = document.querySelector('#mobile-menu');
 const linksMenu = document.querySelector('.links_menu');
 const logo = document.querySelector('#logo');
-const controles = document.querySelector('.controles');
-const botoes = document.querySelector('.botoes');
-const bt1 = document.querySelector('.bt1');
-const bt2 = document.querySelector('.bt2');
-const bt3 = document.querySelector('.bt3');
 
 // Menu Para celular
 const mobileMenu = () => {
@@ -14,6 +9,18 @@ const mobileMenu = () => {
 };
 
 menu.addEventListener('click', mobileMenu);
+
+// Fecha o Menu quando for clicado
+const fechaMenu = () => {
+    const menuBars = document.querySelector('.esta-ativo');
+    if (window.innerWidth <= 768 && menuBars) {
+        menu.classList.toggle('esta-ativo');
+        linksMenu.classList.remove('ativar');
+    };
+};
+
+linksMenu.addEventListener('click', fechaMenu);
+logo.addEventListener('click', fechaMenu);
 
 // Cardápio com JQuery
 $(document).ready(function () {
