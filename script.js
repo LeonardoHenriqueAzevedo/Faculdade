@@ -46,6 +46,9 @@ const marcadorMenu = () => {
 window.addEventListener('scroll', marcadorMenu);
 window.addEventListener('click', marcadorMenu);
 
+// Cardápio
+
+
 // Swiper
 var swiper = new Swiper(".home_slider", {
     spaceBetween: 30,

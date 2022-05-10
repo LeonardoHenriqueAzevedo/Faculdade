@@ -380,12 +380,41 @@ section.cardapio {
     margin: 1rem 2rem;
     padding: .5rem 0;
     border-bottom: .2rem solid var(--branco);
-    color: #fff;
+    color: var(--branco);
     cursor: pointer;
     font-size: 1.5rem;
 }
 
+.controles .botoes.botao-ativo,
 .controles .botoes:hover {
     color: var(--vinho);
     border-color: var(--vinho);
+}
+
+.cardapio .imagem-cardapio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+.cardapio .imagem-cardapio .imagem {
+    width: 35rem;
+    margin: 2rem;
+    border: 3px solid var(--vinho);
+}
+
+.cardapio .imagem-cardapio .imagem img {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cardapio .imagem-cardapio .imagem a {
+    font-size: 2rem;
+    color: var(--branco);
+    padding: .5rem;
+    text-decoration: none;
+    cursor: default;
 }
