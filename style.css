@@ -266,4 +266,8 @@ section:nth-child(even) {
     letter-spacing: .1px;
 }
 
+.swiper-pagination-bullet-active {
+    background: var(--vinho) !important;
+}
+
 /* Fim da Home */
