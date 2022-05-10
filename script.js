@@ -1,13 +1,13 @@
 const menu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector('.links_menu');
-const navLogo = document.querySelector('#logo');
+const linksMenu = document.querySelector('.links_menu');
+const logo = document.querySelector('#logo');
 
 
-// Display Mobile Menu
+// Menu Para celular
 const mobileMenu = () => {
-    console.log(menuLinks);
+    console.log(linksMenu);
     menu.classList.toggle('esta-ativo');
-    menuLinks.classList.toggle('ativar');
+    linksMenu.classList.toggle('ativar');
 };
 
 menu.addEventListener('click', mobileMenu);
